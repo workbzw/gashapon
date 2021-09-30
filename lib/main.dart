@@ -9,8 +9,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var materialApp = MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(primarySwatch: Colors.blue,),
       home: AppHomePage(title: 'Flutter Demo Home Page'),
     );
     return materialApp;
@@ -38,9 +36,6 @@ class _AppHomePageState extends State<AppHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
