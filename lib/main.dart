@@ -20,8 +20,6 @@ class MyApp extends StatelessWidget {
 }
 
 class AppHomePage extends StatefulWidget {
-  AppHomePage({Key? key}) : super(key: key);
-
   @override
   _AppHomePageState createState() => _AppHomePageState();
 }
@@ -45,6 +43,7 @@ class _AppHomePageState extends State<AppHomePage> {
             flex: 1,
             child: Container(
               color: Color(0x5598FF99),
+              /*扭蛋机上布局*/
               child: MachineTopWidget(),
             ),
           ),
@@ -53,6 +52,7 @@ class _AppHomePageState extends State<AppHomePage> {
             flex: 1,
             child: Container(
               color: Color(0x559899FF),
+              /*扭蛋机中布局*/
               child: MachineMidWidget(),
             ),
           ),
@@ -61,6 +61,7 @@ class _AppHomePageState extends State<AppHomePage> {
             flex: 1,
             child: Container(
               color: Color(0x55FF9899),
+              /*扭蛋机下布局*/
               child: MachineBottomWidget(),
             ),
           ),
