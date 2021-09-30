@@ -26,25 +26,30 @@ class _AppHomePageState extends State<AppHomePage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
       child: Column(
-        children: [
-          Container(
-            color: Colors.red,
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height/3,
+        children: <Widget>[
+          /*等分*/
+          Expanded(
+            /*权重为1*/
+            flex: 1,
+            child: Container(
+              color: Colors.red,
+            ),
           ),
-          Container(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height/3,
-            color: Colors.green,
+          Expanded(
+            /*权重为1*/
+            flex: 1,
+            child: Container(
+              color: Colors.green,
+            ),
           ),
-          Container(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height/3,
-            color: Colors.blue,
-          )
+          Expanded(
+            /*权重为1*/
+            flex: 1,
+            child: Container(
+              color: Colors.blue,
+            ),
+          ),
         ],
       ),
     );
