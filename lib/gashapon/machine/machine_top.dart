@@ -13,7 +13,8 @@ class _MachineTopWidgetState extends State<StatefulWidget> {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          image: DecorationImage(image: AssetImage("images/ges_bg.png"),fit: BoxFit.scaleDown)),
+          color: Color(0x00000000),
+          image: DecorationImage(image: AssetImage("images/gashapon_machine.png"),fit: BoxFit.scaleDown)),
     );
   }
 }
